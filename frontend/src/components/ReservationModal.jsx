@@ -112,9 +112,9 @@ export const ReservationModal = ({ isOpen, onClose }) => {
               <DialogTitle className="font-['Playfair_Display'] text-2xl font-medium text-[#2C2C2C]">
                 Reservar Mesa
               </DialogTitle>
-              <p className="text-sm text-[#6B6B6B] mt-1">
+              <DialogDescription className="text-sm text-[#6B6B6B] mt-1">
                 Completa el formulario y te confirmaremos tu reserva
-              </p>
+              </DialogDescription>
             </DialogHeader>
 
             {/* Form */}
