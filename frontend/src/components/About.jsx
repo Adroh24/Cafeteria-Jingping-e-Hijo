@@ -64,8 +64,8 @@ export const About = () => {
               {/* Main Image */}
               <div className="rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                 <img
-                  src="https://images.unsplash.com/photo-1634568574054-0ab278fdc1e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxtYXRjaGElMjBsYXR0ZSUyMGFydCUyMG1pbmltYWxpc3QlMjBjdXB8ZW58MHx8fHwxNzcxMzU5Nzk0fDA&ixlib=rb-4.1.0&q=85"
-                  alt="Matcha Latte Art"
+                  src="https://customer-assets.emergentagent.com/job_matcha-brunch/artifacts/a8frrkl7_SnapInsta.to_633080810_18163890589408390_5428593250821094123_n.jpg"
+                  alt="Jingping e Hijo - Madre e hijo"
                   className="w-full h-[400px] md:h-[500px] object-cover" />
 
               </div>

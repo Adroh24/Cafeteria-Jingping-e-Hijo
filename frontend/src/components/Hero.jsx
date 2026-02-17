@@ -18,7 +18,7 @@ export const Hero = ({ onReserveClick }) => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1767034244655-dc41dcfcdec0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjd8MHwxfHNlYXJjaHwxfHxqYXBhbmRpJTIwY2FmZSUyMGludGVyaW9yJTIwd29vZCUyMHBsYW50cyUyMG1pbmltYWxpc3R8ZW58MHx8fHwxNzcxMzU5ODAyfDA&ixlib=rb-4.1.0&q=85"
+          src="https://customer-assets.emergentagent.com/job_matcha-brunch/artifacts/0fcws6zu_SnapInsta.to_548837436_18147453937408390_5059494411760925664_n%20%281%29.jpg"
           alt="Jingping e Hijo Interior"
           className="w-full h-full object-cover" />
 
