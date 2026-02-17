@@ -5,8 +5,8 @@ export const About = () => {
     <section
       id="historia"
       className="py-20 md:py-32 bg-[#FDFBF7]"
-      data-testid="about-section"
-    >
+      data-testid="about-section">
+
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           {/* Text Content */}
@@ -19,10 +19,10 @@ export const About = () => {
               <span className="text-[#8D5A44]">especialidad</span>
             </h2>
             <div className="space-y-6 text-[#6B6B6B] text-base md:text-lg leading-relaxed">
-              <p>
-                <strong className="text-[#2C2C2C]">Jingping</strong>, con raíces en la precisión 
-                y estética asiática, trajo consigo el arte del matcha ceremonial y una 
-                obsesión por la perfección en cada detalle.
+              <p> [静平] es más que un nombre; es el origen de todo. Ella es la madre de Julián, el fundador de este proyecto. Este rincón nació del vínculo más sincero y profundo que existe: el de una madre y su hijo.
+                <strong className="text-[#2C2C2C]">Jingping</strong>
+
+
               </p>
               <p>
                 Su <strong className="text-[#8D5A44]">hijo</strong>, criado entre dos 
@@ -67,8 +67,8 @@ export const About = () => {
                 <img
                   src="https://images.unsplash.com/photo-1634568574054-0ab278fdc1e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxtYXRjaGElMjBsYXR0ZSUyMGFydCUyMG1pbmltYWxpc3QlMjBjdXB8ZW58MHx8fHwxNzcxMzU5Nzk0fDA&ixlib=rb-4.1.0&q=85"
                   alt="Matcha Latte Art"
-                  className="w-full h-[400px] md:h-[500px] object-cover"
-                />
+                  className="w-full h-[400px] md:h-[500px] object-cover" />
+
               </div>
               
               {/* Floating Badge */}
@@ -85,6 +85,6 @@ export const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
