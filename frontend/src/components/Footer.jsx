@@ -36,8 +36,8 @@ export const Footer = () => {
               <div className="flex items-center gap-4">
                 <Clock className="w-5 h-5 text-[#B8C480] flex-shrink-0" />
                 <div>
-                  <span className="block text-white">Lun - Vie: 8:00 - 18:00</span>
-                  <span className="text-white/60 text-sm">Sáb - Dom: 9:00 - 19:00</span>
+                  <span className="block text-white">Lun - Vie: 8:00 - 20:00</span>
+                  <span className="text-white/60 text-sm">Sáb - Dom: 9:00 - 20:00</span>
                 </div>
               </div>
               <div className="flex items-center gap-4">

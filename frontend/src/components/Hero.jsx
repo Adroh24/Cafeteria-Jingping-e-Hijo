@@ -71,7 +71,7 @@ export const Hero = ({ onReserveClick }) => {
           {/* Hours Badge */}
           <div className="animate-fade-in-up opacity-0 delay-400 mt-12 flex items-center gap-4 text-sm text-[#6B6B6B]">
             <div className="w-2 h-2 bg-[#B8C480] rounded-full animate-pulse" />
-            <span>Abierto hoy: 9:00 - 18:00</span>
+            <span>Lun-Vie: 8:00 - 20:00 | Sáb-Dom: 9:00 - 20:00</span>
           </div>
         </div>
       </div>
