@@ -19,10 +19,10 @@ export const About = () => {
               <span className="text-[#8D5A44]">especialidad</span>
             </h2>
             <div className="space-y-6 text-[#6B6B6B] text-base md:text-lg leading-relaxed">
-              <p> [静平] es más que un nombre; es el origen de todo. Ella es la madre de Julián, el fundador de este proyecto. Este rincón nació del vínculo más sincero y profundo que existe: el de una madre y su hijo.
-                <strong className="text-[#2C2C2C]">Jingping</strong>
-
-
+              <p>
+                [静平] es más que un nombre; es el origen de todo. Ella es la madre de Julián, 
+                el fundador de este proyecto. Este rincón nació del vínculo más sincero y 
+                profundo que existe: el de una madre y su hijo.
               </p>
               <p>
                 Su hijo, criado entre dos culturas, añadió la calidez del brunch mediterráneo 
