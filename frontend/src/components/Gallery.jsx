@@ -2,27 +2,33 @@ export const Gallery = () => {
   const galleryImages = [
     {
       id: 1,
-      url: 'https://images.unsplash.com/photo-1767034244655-dc41dcfcdec0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjd8MHwxfHNlYXJjaHwxfHxqYXBhbmRpJTIwY2FmZSUyMGludGVyaW9yJTIwd29vZCUyMHBsYW50cyUyMG1pbmltYWxpc3R8ZW58MHx8fHwxNzcxMzU5ODAyfDA&ixlib=rb-4.1.0&q=85',
-      alt: 'Interior del café con decoración Japandi',
+      url: 'https://customer-assets.emergentagent.com/job_matcha-brunch/artifacts/eigaunvs_SnapInsta.to_478641270_18127500883408390_195320477355163075_n.jpg',
+      alt: 'Interior del café Jingping e Hijo',
       span: 'md:col-span-2 md:row-span-2',
     },
     {
       id: 2,
-      url: 'https://images.unsplash.com/photo-1647774469542-d8df9c2e23cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHw0fHxzcGVjaWFsdHklMjBjb2ZmZWUlMjBwb3VyJTIwb3ZlciUyMG1pbmltYWxpc3QlMjBjYWZlfGVufDB8fHx8MTc3MTM1OTc5OHww&ixlib=rb-4.1.0&q=85',
-      alt: 'Preparación de café specialty',
+      url: 'https://customer-assets.emergentagent.com/job_matcha-brunch/artifacts/x2tph81r_SnapInsta.to_480570694_18127923193408390_3440128512778252129_n.jpg',
+      alt: 'Detalle del café',
       span: 'md:col-span-1',
     },
     {
       id: 3,
-      url: 'https://images.unsplash.com/photo-1770494347729-891046add494?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxzcGVjaWFsdHklMjBjb2ZmZWUlMjBwb3VyJTIwb3ZlciUyMG1pbmltYWxpc3QlMjBjYWZlfGVufDB8fHx8MTc3MTM1OTc5OHww&ixlib=rb-4.1.0&q=85',
-      alt: 'Detalle de café vertido',
+      url: 'https://customer-assets.emergentagent.com/job_matcha-brunch/artifacts/3jbcmn9w_SnapInsta.to_478471427_18127604143408390_3959424217190878746_n.jpg',
+      alt: 'Ambiente del local',
       span: 'md:col-span-1',
     },
     {
       id: 4,
-      url: 'https://images.unsplash.com/photo-1534255536879-fa4b8f173d74?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHw0fHxnb3VybWV0JTIwYnJ1bmNoJTIwYXZvY2FkbyUyMHRvYXN0JTIwcGFuY2FrZXMlMjBtaW5pbWFsaXN0JTIwcGxhdGV8ZW58MHx8fHwxNzcxMzU5ODA3fDA&ixlib=rb-4.1.0&q=85',
-      alt: 'Plato de brunch gourmet',
-      span: 'md:col-span-2',
+      url: 'https://customer-assets.emergentagent.com/job_matcha-brunch/artifacts/nyvrp9gp_SnapInsta.to_491460227_18134130190408390_6026543431952163044_n.jpg',
+      alt: 'Espacio de trabajo',
+      span: 'md:col-span-1',
+    },
+    {
+      id: 5,
+      url: 'https://customer-assets.emergentagent.com/job_matcha-brunch/artifacts/wgzx4yda_SnapInsta.to_491440777_18134082316408390_5245545559024006223_n.jpg',
+      alt: 'Rincón del café',
+      span: 'md:col-span-1',
     },
   ];
 
@@ -48,11 +54,11 @@ export const Gallery = () => {
         </div>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
           {galleryImages.map((image) => (
             <div
               key={image.id}
-              className={`gallery-item relative rounded-2xl overflow-hidden ${image.span} min-h-[250px] md:min-h-[300px]`}
+              className={`gallery-item relative rounded-xl md:rounded-2xl overflow-hidden ${image.span} min-h-[180px] md:min-h-[280px]`}
               data-testid={`gallery-item-${image.id}`}
             >
               <img

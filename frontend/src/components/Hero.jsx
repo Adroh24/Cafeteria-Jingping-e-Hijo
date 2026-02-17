@@ -27,10 +27,10 @@ export const Hero = ({ onReserveClick }) => {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-32 md:py-0">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl bg-[#FDFBF7]/85 backdrop-blur-sm p-8 md:p-12 rounded-3xl">
           {/* Badge */}
           <div className="animate-fade-in-up opacity-0 mb-6">
-            <span className="inline-block uppercase !font-medium !text-sm !text-center px-4 py-1.5 rounded-full text-[#4A3B32] bg-[#B8C480]/20">
+            <span className="inline-block uppercase !font-medium !text-sm !text-center px-4 py-1.5 rounded-full text-[#4A3B32] bg-[#B8C480]/30">
               Café de Especialidad & Matcha Bar
             </span>
           </div>
@@ -43,7 +43,7 @@ export const Hero = ({ onReserveClick }) => {
           </h1>
 
           {/* Subheadline */}
-          <p className="animate-fade-in-up opacity-0 delay-200 text-lg md:text-xl text-[#6B6B6B] leading-relaxed mb-10 max-w-lg">
+          <p className="animate-fade-in-up opacity-0 delay-200 text-lg md:text-xl text-[#4A3B32] leading-relaxed mb-10 max-w-lg">
             Café de especialidad y Matcha Bar en el corazón de Chamberí. 
             Una fusión única de tradición oriental y sabor familiar.
           </p>
@@ -69,7 +69,7 @@ export const Hero = ({ onReserveClick }) => {
           </div>
 
           {/* Hours Badge */}
-          <div className="animate-fade-in-up opacity-0 delay-400 mt-12 flex items-center gap-4 text-sm text-[#6B6B6B]">
+          <div className="animate-fade-in-up opacity-0 delay-400 mt-12 flex items-center gap-4 text-sm text-[#4A3B32]">
             <div className="w-2 h-2 bg-[#B8C480] rounded-full animate-pulse" />
             <span>Lun-Vie: 8:00 - 20:00 | Sáb-Dom: 9:00 - 20:00</span>
           </div>

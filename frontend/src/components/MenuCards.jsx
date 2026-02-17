@@ -1,38 +1,51 @@
-import { Coffee, Leaf, UtensilsCrossed, ArrowRight } from 'lucide-react';
+import { useState } from 'react';
+import { Coffee, Leaf, Wine, Droplets, ChevronDown } from 'lucide-react';
 
 export const MenuCards = () => {
-  const menuItems = [
-    {
-      id: 'coffee',
-      title: 'Specialty Coffee',
-      subtitle: 'Café de Especialidad',
-      description: 'Granos de origen único, tostados artesanalmente. V60, AeroPress, Chemex y el mejor espresso.',
-      image: 'https://images.unsplash.com/photo-1770579673855-ab18aabe71a2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxzcGVjaWFsdHklMjBjb2ZmZWUlMjBwb3VyJTIwb3ZlciUyMG1pbmltYWxpc3QlMjBjYWZlfGVufDB8fHx8MTc3MTM1OTc5OHww&ixlib=rb-4.1.0&q=85',
-      icon: Coffee,
-      price: 'Desde 3.50€',
-      highlight: 'Granos de Colombia y Etiopía',
-    },
-    {
-      id: 'matcha',
-      title: 'Ceremonial Matcha',
-      subtitle: 'Matcha Ceremonial',
-      description: 'Matcha premium importado de Uji, Japón. Batido a mano con chasen tradicional.',
-      image: 'https://images.unsplash.com/photo-1634568574054-0ab278fdc1e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxtYXRjaGElMjBsYXR0ZSUyMGFydCUyMG1pbmltYWxpc3QlMjBjdXB8ZW58MHx8fHwxNzcxMzU5Nzk0fDA&ixlib=rb-4.1.0&q=85',
-      icon: Leaf,
-      price: 'Desde 4.50€',
-      highlight: 'Grado ceremonial de Uji',
-    },
-    {
-      id: 'brunch',
-      title: 'Fusion Brunch',
-      subtitle: 'Brunch Fusión',
-      description: 'Tostadas de aguacate con kimchi, huevos benedictinos con twist asiático, y más.',
-      image: 'https://images.unsplash.com/photo-1642689690565-bf0afb7eb41e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwzfHxnb3VybWV0JTIwYnJ1bmNoJTIwYXZvY2FkbyUyMHRvYXN0JTIwcGFuY2FrZXMlMjBtaW5pbWFsaXN0JTIwcGxhdGV8ZW58MHx8fHwxNzcxMzU5ODA3fDA&ixlib=rb-4.1.0&q=85',
-      icon: UtensilsCrossed,
-      price: 'Desde 12.00€',
-      highlight: 'Sábados y domingos',
-    },
+  const [activeCategory, setActiveCategory] = useState('cafes');
+
+  const menuCategories = [
+    { id: 'cafes', label: 'Cafés', icon: Coffee },
+    { id: 'frias', label: 'Bebidas Frías', icon: Droplets },
+    { id: 'vinos', label: 'Vinos y Otras', icon: Wine },
+    { id: 'refrescos', label: 'Refrescos', icon: Leaf },
   ];
+
+  const menuItems = {
+    cafes: [
+      { name: 'Espresso', price: '2.70' },
+      { name: 'Americano', price: '3.00' },
+      { name: 'Cortado', price: '3.00' },
+      { name: 'Latte / Cappuccino', price: '3.40' },
+      { name: 'Flat White', price: '3.80' },
+      { name: 'Batch Brew', price: '3.80' },
+      { name: 'Hand Brew', price: '7.00 - 12.00' },
+      { name: 'Chai Latte', price: '4.00' },
+      { name: 'Dirty Chai Latte', price: '5.00' },
+      { name: 'Matcha Latte', price: '5.20' },
+      { name: 'Mocha', price: '5.50' },
+      { name: 'Chocolate Caliente', price: '4.50' },
+      { name: 'Variedad de Tés', price: '4.00 - 6.00', note: 'Consultar opciones' },
+    ],
+    frias: [
+      { name: 'Iced Latte', price: '4.50' },
+      { name: 'Iced Chai', price: '4.50' },
+      { name: 'Iced Matcha', price: '5.50', note: 'Agua de coco o Leche Vegetal +0.50' },
+      { name: 'Iced Tea', price: '4.20' },
+      { name: 'Cold Brew', price: '4.20' },
+    ],
+    vinos: [
+      { name: 'Tintos', price: '4.00', note: 'Consultar opciones' },
+      { name: 'Blancos', price: '4.00', note: 'Consultar opciones' },
+      { name: 'Tsingtao', price: '3.20' },
+      { name: 'Rio Cocktail', price: '4.20', note: 'Consultar opciones' },
+    ],
+    refrescos: [
+      { name: 'Bebidas Fritz', price: '3.50', note: 'Consultar opciones' },
+      { name: 'Lemonaid+', price: '3.50', note: 'Consultar opciones' },
+      { name: 'Botella de agua', price: '2.50' },
+    ],
+  };
 
   return (
     <section
@@ -40,9 +53,9 @@ export const MenuCards = () => {
       className="py-20 md:py-32 bg-white"
       data-testid="menu-section"
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+      <div className="max-w-4xl mx-auto px-6 md:px-12">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <span className="inline-block text-[#B8C480] text-sm font-medium tracking-widest uppercase mb-4">
             Nuestra Carta
           </span>
@@ -51,66 +64,61 @@ export const MenuCards = () => {
           </h2>
           <p className="text-[#6B6B6B] text-base md:text-lg max-w-2xl mx-auto">
             Cada elemento de nuestra carta está cuidadosamente seleccionado para 
-            ofrecerte una experiencia única que fusiona lo mejor de Oriente y Occidente.
+            ofrecerte una experiencia única.
           </p>
         </div>
 
-        {/* Cards Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {menuItems.map((item, index) => (
-            <div
-              key={item.id}
-              className="menu-card bg-white rounded-2xl overflow-hidden border border-[#E5E0D8] hover:border-[#B8C480] group cursor-pointer"
-              data-testid={`menu-card-${item.id}`}
-              style={{ animationDelay: `${index * 150}ms` }}
+        {/* Category Tabs */}
+        <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-10">
+          {menuCategories.map((category) => (
+            <button
+              key={category.id}
+              onClick={() => setActiveCategory(category.id)}
+              className={`flex items-center gap-2 px-4 md:px-6 py-2.5 md:py-3 rounded-full text-sm md:text-base font-medium transition-all duration-300 ${
+                activeCategory === category.id
+                  ? 'bg-[#B8C480] text-[#2C2C2C]'
+                  : 'bg-[#FDFBF7] text-[#6B6B6B] hover:bg-[#E5E0D8]'
+              }`}
+              data-testid={`menu-tab-${category.id}`}
             >
-              {/* Image */}
-              <div className="relative h-64 overflow-hidden">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover"
-                />
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
-                {/* Price Badge */}
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full">
-                  <span className="text-sm font-medium text-[#2C2C2C]">{item.price}</span>
-                </div>
-              </div>
-
-              {/* Content */}
-              <div className="p-6">
-                {/* Icon & Title */}
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="w-12 h-12 bg-[#B8C480]/20 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-[#B8C480] transition-colors duration-300">
-                    <item.icon className="w-6 h-6 text-[#4A3B32] group-hover:text-white transition-colors duration-300" />
-                  </div>
-                  <div>
-                    <h3 className="font-['Playfair_Display'] text-xl font-medium text-[#2C2C2C] mb-1">
-                      {item.title}
-                    </h3>
-                    <span className="text-sm text-[#8D5A44]">{item.subtitle}</span>
-                  </div>
-                </div>
-
-                {/* Description */}
-                <p className="text-[#6B6B6B] text-sm leading-relaxed mb-4">
-                  {item.description}
-                </p>
-
-                {/* Highlight */}
-                <div className="flex items-center justify-between pt-4 border-t border-[#E5E0D8]">
-                  <span className="text-xs text-[#B8C480] font-medium tracking-wide uppercase">
-                    {item.highlight}
-                  </span>
-                  <ArrowRight className="w-4 h-4 text-[#4A3B32] opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
-                </div>
-              </div>
-            </div>
+              <category.icon className="w-4 h-4" />
+              <span className="hidden sm:inline">{category.label}</span>
+              <span className="sm:hidden">{category.label.split(' ')[0]}</span>
+            </button>
           ))}
         </div>
+
+        {/* Menu Items */}
+        <div className="bg-[#FDFBF7] rounded-2xl p-6 md:p-10">
+          <div className="space-y-1">
+            {menuItems[activeCategory].map((item, index) => (
+              <div
+                key={index}
+                className="group flex items-baseline justify-between py-3 border-b border-dashed border-[#E5E0D8] last:border-b-0 hover:bg-white/50 px-3 -mx-3 rounded-lg transition-colors duration-200"
+                data-testid={`menu-item-${item.name.toLowerCase().replace(/\s/g, '-')}`}
+              >
+                <div className="flex-1 pr-4">
+                  <span className="text-[#2C2C2C] font-medium group-hover:text-[#8D5A44] transition-colors duration-200">
+                    {item.name}
+                  </span>
+                  {item.note && (
+                    <span className="block text-xs text-[#6B6B6B] mt-0.5 italic">
+                      {item.note}
+                    </span>
+                  )}
+                </div>
+                <span className="text-[#B8C480] font-semibold whitespace-nowrap">
+                  {item.price}€
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Note */}
+        <p className="text-center text-sm text-[#6B6B6B] mt-6">
+          Leche vegetal disponible sin coste adicional • Preguntar por alérgenos
+        </p>
       </div>
     </section>
   );
