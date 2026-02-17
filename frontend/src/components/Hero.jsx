@@ -13,15 +13,15 @@ export const Hero = ({ onReserveClick }) => {
     <section
       id="inicio"
       className="relative min-h-screen flex items-center overflow-hidden"
-      data-testid="hero-section"
-    >
+      data-testid="hero-section">
+
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
           src="https://images.unsplash.com/photo-1767034244655-dc41dcfcdec0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjd8MHwxfHNlYXJjaHwxfHxqYXBhbmRpJTIwY2FmZSUyMGludGVyaW9yJTIwd29vZCUyMHBsYW50cyUyMG1pbmltYWxpc3R8ZW58MHx8fHwxNzcxMzU5ODAyfDA&ixlib=rb-4.1.0&q=85"
           alt="Jingping e Hijo Interior"
-          className="w-full h-full object-cover"
-        />
+          className="w-full h-full object-cover" />
+
         <div className="hero-overlay absolute inset-0" />
       </div>
 
@@ -30,7 +30,7 @@ export const Hero = ({ onReserveClick }) => {
         <div className="max-w-2xl">
           {/* Badge */}
           <div className="animate-fade-in-up opacity-0 mb-6">
-            <span className="inline-block bg-[#B8C480]/20 text-[#4A3B32] px-4 py-1.5 rounded-full text-sm font-medium tracking-widest uppercase">
+            <span className="inline-block uppercase !font-medium !text-sm !text-center px-4 py-1.5 rounded-full text-[#4A3B32] bg-[#B8C480]/20">
               Café de Especialidad & Matcha Bar
             </span>
           </div>
@@ -53,8 +53,8 @@ export const Hero = ({ onReserveClick }) => {
             <Button
               onClick={onReserveClick}
               className="bg-[#B8C480] text-[#2C2C2C] hover:bg-[#A5B36B] rounded-full px-8 py-6 text-base font-medium btn-primary group"
-              data-testid="hero-reserve-btn"
-            >
+              data-testid="hero-reserve-btn">
+
               Reservar Mesa
               <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Button>
@@ -62,8 +62,8 @@ export const Hero = ({ onReserveClick }) => {
               variant="outline"
               onClick={scrollToMenu}
               className="bg-transparent border-2 border-[#4A3B32] text-[#4A3B32] hover:bg-[#4A3B32] hover:text-white rounded-full px-8 py-6 text-base font-medium btn-secondary"
-              data-testid="hero-menu-btn"
-            >
+              data-testid="hero-menu-btn">
+
               Ver Menú
             </Button>
           </div>
@@ -82,6 +82,6 @@ export const Hero = ({ onReserveClick }) => {
           <div className="w-1.5 h-3 bg-[#4A3B32]/50 rounded-full" />
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
