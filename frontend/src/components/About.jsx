@@ -25,9 +25,8 @@ export const About = () => {
 
               </p>
               <p>
-                Su <strong className="text-[#8D5A44]">hijo</strong>, criado entre dos 
-                culturas, añadió la calidez del brunch mediterráneo y la pasión por el 
-                café de especialidad de origen único.
+                Su hijo, criado entre dos culturas, añadió la calidez del brunch mediterráneo 
+                y la pasión por el café de especialidad de origen único.
               </p>
               <p>
                 Juntos crearon un espacio donde cada taza cuenta una historia, cada 
