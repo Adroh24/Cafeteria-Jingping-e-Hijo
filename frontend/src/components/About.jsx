@@ -14,19 +14,19 @@ export const About = () => {
             <span className="inline-block text-[#B8C480] text-sm font-medium tracking-widest uppercase mb-4">
               Nuestra Historia
             </span>
-            <h2 className="font-['Playfair_Display'] text-3xl md:text-4xl lg:text-5xl font-medium text-[#2C2C2C] leading-tight mb-6">
-              Donde la tradición se encuentra con la{' '}
-              <span className="text-[#8D5A44]">especialidad</span>
+            <h2 className="font-['Playfair_Display'] text-3xl md:text-4xl lg:text-5xl font-medium text-[#2C2C2C] leading-tight mb-6">JINGPING
+              {""}
+              <span className="text-[#8D5A44]"></span>
             </h2>
             <div className="space-y-6 text-[#6B6B6B] text-base md:text-lg leading-relaxed">
-              <p>
-                [静平] es más que un nombre; es el origen de todo. Ella es la madre de Julián, 
-                el fundador de este proyecto. Este rincón nació del vínculo más sincero y 
-                profundo que existe: el de una madre y su hijo.
+              <p>Jingping [静平] es más que un nombre; es el origen de todo. Ella es la madre de Julián, el fundador de este proyecto. Este rincón nació del vínculo más sincero y profundo que existe: el de una madre y su hijo.
+
+
+
               </p>
-              <p>
-                Su hijo, criado entre dos culturas, añadió la calidez del brunch mediterráneo 
-                y la pasión por el café de especialidad de origen único.
+              <p>Su nombre significa paz, calma. Y eso es exactamente lo que buscamos transmitir: la sensación de hogar. Esa presencia que cuida sin hacer ruido, que sostiene y que hace que todo tenga sentido. Jingping e Hijo es nuestro homenaje a esa calidez, un pequeño hogar compartido donde la tradición y el cuidado se sirven en cada taza.
+
+
               </p>
               <p>
                 Juntos crearon un espacio donde cada taza cuenta una historia, cada 
@@ -73,8 +73,8 @@ export const About = () => {
               {/* Floating Badge */}
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
                 <div className="text-center">
-                  <span className="block font-['Playfair_Display'] text-4xl font-medium text-[#B8C480]">5+</span>
-                  <span className="text-sm text-[#6B6B6B]">Años de experiencia</span>
+                  <span className="block font-['Playfair_Display'] text-4xl font-medium text-[#B8C480]"></span>
+                  <span className="text-sm text-[#6B6B6B]"></span>
                 </div>
               </div>
 
