@@ -22,7 +22,7 @@ export const Hero = ({ onReserveClick }) => {
           alt="Jingping e Hijo Interior"
           className="w-full h-full object-cover" />
 
-        <div className="hero-overlay absolute inset-0" />
+        <div className="" />
       </div>
 
       {/* Content */}
