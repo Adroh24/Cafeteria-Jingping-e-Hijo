@@ -1,0 +1,171 @@
+{
+  "design_system": {
+    "typography": {
+      "font_family": {
+        "heading": "Playfair Display, serif",
+        "body": "Lato, Inter, sans-serif"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-7xl font-medium tracking-tight leading-tight",
+        "h2": "text-4xl md:text-5xl font-medium tracking-tight",
+        "h3": "text-2xl md:text-3xl font-medium",
+        "body_large": "text-lg md:text-xl leading-relaxed font-light",
+        "body_default": "text-base leading-relaxed text-muted-foreground",
+        "caption": "text-sm tracking-widest uppercase text-muted-foreground"
+      }
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "default": "#B8C480",
+          "foreground": "#2C2C2C",
+          "description": "Matcha Green - Soft, organic, calming"
+        },
+        "secondary": {
+          "default": "#FDFBF7",
+          "foreground": "#2C2C2C",
+          "description": "Warm Cream/Beige - Background base"
+        },
+        "accent": {
+          "default": "#8D5A44",
+          "foreground": "#FFFFFF",
+          "description": "Terracotta - Warmth and earthiness"
+        },
+        "neutral": {
+          "dark": "#4A3B32",
+          "text_main": "#2C2C2C",
+          "text_muted": "#6B6B6B",
+          "border": "#E5E0D8"
+        }
+      },
+      "theme_strategy": "light_only",
+      "background_classes": "bg-[#FDFBF7]"
+    },
+    "spacing": {
+      "container_padding": "px-6 md:px-12 lg:px-24",
+      "section_spacing": "py-20 md:py-32",
+      "element_spacing": "gap-6 md:gap-12"
+    },
+    "visual_enhancers": {
+      "border_radius": {
+        "default": "rounded-lg",
+        "organic": "rounded-[2rem] md:rounded-[3rem]",
+        "buttons": "rounded-full"
+      },
+      "shadows": {
+        "soft": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+        "hover": "hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-shadow duration-500"
+      },
+      "glassmorphism": "backdrop-blur-md bg-white/70 border border-white/20",
+      "textures": "Use subtle grain overlay if possible, or keep it clean matte."
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#B8C480] text-[#2C2C2C] hover:bg-[#A5B36B] rounded-full px-8 py-6 text-lg font-medium transition-all duration-300 hover:scale-105",
+      "secondary": "bg-transparent border border-[#4A3B32] text-[#4A3B32] hover:bg-[#4A3B32] hover:text-white rounded-full px-8 py-6 text-lg transition-all duration-300",
+      "ghost": "text-[#4A3B32] hover:text-[#B8C480] hover:bg-transparent font-medium tracking-wide"
+    },
+    "cards": {
+      "feature": "bg-white rounded-2xl overflow-hidden border border-[#E5E0D8] hover:border-[#B8C480] transition-colors duration-500 group cursor-pointer",
+      "menu_item": "flex justify-between items-baseline border-b border-dashed border-[#E5E0D8] pb-2 mb-4"
+    },
+    "navigation": {
+      "wrapper": "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+      "scrolled": "bg-white/80 backdrop-blur-md shadow-sm py-4",
+      "transparent": "bg-transparent py-6"
+    }
+  },
+  "layout_strategies": {
+    "hero_section": {
+      "type": "immersive_split",
+      "description": "Full height hero. Left side: Elegant typography with 'Book Table' CTA. Right side: Large organic-shaped image or full-width background image with overlay.",
+      "classes": "min-h-screen flex items-center relative overflow-hidden"
+    },
+    "bento_grid": {
+      "type": "mode_a_tetris",
+      "description": "Asymmetric grid for the gallery. Mix of tall, wide, and square images.",
+      "classes": "grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[300px]"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": {
+        "url": "https://images.unsplash.com/photo-1767034244655-dc41dcfcdec0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjd8MHwxfHNlYXJjaHwxfHxqYXBhbmRpJTIwY2FmZSUyMGludGVyaW9yJTIwd29vZCUyMHBsYW50cyUyMG1pbmltYWxpc3R8ZW58MHx8fHwxNzcxMzU5ODAyfDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Minimalist Japandi Cafe Interior with wood and plants"
+      },
+      "matcha_feature": {
+        "url": "https://images.unsplash.com/photo-1634568574054-0ab278fdc1e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxtYXRjaGElMjBsYXR0ZSUyMGFydCUyMG1pbmltYWxpc3QlMjBjdXB8ZW58MHx8fHwxNzcxMzU5Nzk0fDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Artisan Matcha Latte in minimalist cup"
+      },
+      "coffee_feature": {
+        "url": "https://images.unsplash.com/photo-1770579673855-ab18aabe71a2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxzcGVjaWFsdHklMjBjb2ZmZWUlMjBwb3VyJTIwb3ZlciUyMG1pbmltYWxpc3QlMjBjYWZlfGVufDB8fHx8MTc3MTM1OTc5OHww&ixlib=rb-4.1.0&q=85",
+        "alt": "Specialty Pour Over Coffee"
+      },
+      "brunch_feature": {
+        "url": "https://images.unsplash.com/photo-1642689690565-bf0afb7eb41e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwzfHxnb3VybWV0JTIwYnJ1bmNoJTIwYXZvY2FkbyUyMHRvYXN0JTIwcGFuY2FrZXMlMjBtaW5pbWFsaXN0JTIwcGxhdGV8ZW58MHx8fHwxNzcxMzU5ODA3fDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Gourmet Avocado Toast Brunch"
+      },
+      "gallery": [
+        "https://images.unsplash.com/photo-1647774469542-d8df9c2e23cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHw0fHxzcGVjaWFsdHklMjBjb2ZmZWUlMjBwb3VyJTIwb3ZlciUyMG1pbmltYWxpc3QlMjBjYWZlfGVufDB8fHx8MTc3MTM1OTc5OHww&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1770494347729-891046add494?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxzcGVjaWFsdHklMjBjb2ZmZWUlMjBwb3VyJTIwb3ZlciUyMG1pbmltYWxpc3QlMjBjYWZlfGVufDB8fHx8MTc3MTM1OTc5OHww&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1534255536879-fa4b8f173d74?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHw0fHxnb3VybWV0JTIwYnJ1bmNoJTIwYXZvY2FkbyUyMHRvYXN0JTIwcGFuY2FrZXMlMjBtaW5pbWFsaXN0JTIwcGxhdGV8ZW58MHx8fHwxNzcxMzU5ODA3fDA&ixlib=rb-4.1.0&q=85"
+      ]
+    },
+    "icons": "Lucide-React (Leaf, Coffee, MapPin, Calendar, Instagram, ArrowRight, Menu, X)"
+  },
+  "instructions_to_main_agent": {
+    "general": "You are building a Single Page Landing for 'Jingping e Hijo'. The vibe is 'Japandi' (Japanese + Scandinavian). It must feel serene, precise, yet warm. Use the provided color palette strictly. Do not use default Shadcn blues/slates. Override them with the warm neutrals provided.",
+    "sections": [
+      {
+        "name": "Header",
+        "requirements": "Sticky. Logo text 'Jingping e Hijo' in Playfair Display. Nav links (About, Menu, Gallery, Contact). CTA 'Reservar Mesa' (Pill shape). Mobile menu hamburger."
+      },
+      {
+        "name": "Hero",
+        "requirements": "Immersive. Headline: 'Precisión Asiática. Calidez Local.' Subhead: 'Café de especialidad y Matcha Bar en el corazón de Chamberí.' CTA: 'Ver Menú' & 'Reservar'. Background image: Cafe Interior."
+      },
+      {
+        "name": "About",
+        "requirements": "Story of Jingping (Asian precision) and his Son (Local warmth). Asymmetric layout. Text left, Image right with organic border radius."
+      },
+      {
+        "name": "Featured Menu",
+        "requirements": "3 Cards: 'Ceremonial Matcha', 'Specialty Coffee', 'Brunch & Bakery'. Use the specific images provided. Hover effects: Image zoom or card lift."
+      },
+      {
+        "name": "Gallery",
+        "requirements": "Bento Grid layout. Mix of atmosphere, details, and food shots. Use the gallery images provided."
+      },
+      {
+        "name": "Location & Footer",
+        "requirements": "Embedded Google Map (iframe placeholder). Address: C. de Galileo, 3, Chamberí, 28015 Madrid. Social Links. Copyright."
+      },
+      {
+        "name": "Reservation Modal",
+        "requirements": "Triggered by 'Reservar Mesa' button. Use Shadcn Dialog + Calendar + Form (Name, Guests, Time). Simple and clean."
+      }
+    ],
+    "technical": "Use 'lucide-react' for icons. Ensure 'mobile-first' responsiveness. Use 'framer-motion' for subtle entrance animations (fade-up) if possible, otherwise standard CSS transitions."
+  },
+  "universal_guidelines": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Create new components that match the style and conventions of existing components when needed",
+    "Examine existing components to understand the project's component patterns before creating new ones",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use sonner for toasts. Sonner component are located in /app/src/components/ui/sonner.tsx"
+  ]
+}
