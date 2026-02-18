@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Coffee, Leaf, Wine, Droplets, ChevronDown } from 'lucide-react';
+import { Coffee, Leaf, Wine, Droplets, Salad, Sandwich, Cookie } from 'lucide-react';
 
 export const MenuCards = () => {
   const [activeCategory, setActiveCategory] = useState('cafes');
@@ -7,6 +7,9 @@ export const MenuCards = () => {
   const menuCategories = [
     { id: 'cafes', label: 'Cafés', icon: Coffee },
     { id: 'frias', label: 'Bebidas Frías', icon: Droplets },
+    { id: 'granola', label: 'Granola', icon: Salad },
+    { id: 'sandwiches', label: 'Sandwiches', icon: Sandwich },
+    { id: 'tostadas', label: 'Tostadas', icon: Cookie },
     { id: 'vinos', label: 'Vinos y Otras', icon: Wine },
     { id: 'refrescos', label: 'Refrescos', icon: Leaf },
   ];
@@ -33,6 +36,23 @@ export const MenuCards = () => {
       { name: 'Iced Matcha', price: '5.50', note: 'Agua de coco o Leche Vegetal +0.50' },
       { name: 'Iced Tea', price: '4.20' },
       { name: 'Cold Brew', price: '4.20' },
+    ],
+    granola: [
+      { name: 'Granola Bowl', price: '6.90' },
+      { name: 'Matcha Bowl', price: '9.90' },
+    ],
+    sandwiches: [
+      { name: 'Jamón y Queso', price: '7.90' },
+      { name: 'Pollo Teriyaki', price: '9.90' },
+      { name: 'Egg Mayo', price: '6.40' },
+      { name: 'Kimchi Tuna', price: '7.90' },
+      { name: 'Bulgogi', price: '11.90' },
+    ],
+    tostadas: [
+      { name: 'Tomate', price: '3.90' },
+      { name: 'Mantequilla', price: '3.90' },
+      { name: 'Aguacate', price: '6.40' },
+      { name: 'Mayak', price: '8.40' },
     ],
     vinos: [
       { name: 'Tintos', price: '4.00', note: 'Consultar opciones' },
