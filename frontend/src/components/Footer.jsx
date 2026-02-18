@@ -77,7 +77,7 @@ export const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://www.google.com/maps/place/Cafeter%C3%ADa+JINGPING+E+HIJO"
+                href="https://maps.app.goo.gl/BNARCBco5Dej7R1U8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full social-link hover:bg-[#B8C480]"

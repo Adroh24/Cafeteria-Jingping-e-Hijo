@@ -225,7 +225,7 @@ export const Reviews = () => {
         {/* Google Reviews CTA */}
         <div className="mt-12 text-center">
           <a
-            href="https://www.google.com/maps/place/Cafeter%C3%ADa+JINGPING+E+HIJO"
+            href="https://maps.app.goo.gl/BNARCBco5Dej7R1U8"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#FDFBF7] hover:bg-[#B8C480] text-[#4A3B32] hover:text-white px-6 py-3 rounded-full font-medium transition-all duration-300"
