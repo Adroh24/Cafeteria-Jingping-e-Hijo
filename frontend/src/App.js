@@ -7,6 +7,7 @@ import { About } from './components/About';
 import { MenuCards } from './components/MenuCards';
 import { Reviews } from './components/Reviews';
 import { Gallery } from './components/Gallery';
+import { Origins } from './components/Origins';
 import { Footer } from './components/Footer';
 import { ReservationModal } from './components/ReservationModal';
 import { CartaPage } from './components/CartaPage';
@@ -25,6 +26,7 @@ const HomePage = ({ onReserveClick }) => {
         <MenuCards />
         <Reviews />
         <Gallery />
+        <Origins />
       </main>
       
       {/* Footer */}
