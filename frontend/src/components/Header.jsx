@@ -118,11 +118,20 @@ export const Header = ({ onReserveClick }) => {
               key={link.href}
               href={link.href}
               onClick={(e) => scrollToSection(e, link.href)}
-              className="py-3 text-[#4A3B32] hover:text-[#2C2C2C] font-medium text-base border-b border-[#E5E0D8] last:border-b-0"
+              className="py-3 text-[#4A3B32] hover:text-[#2C2C2C] font-medium text-base border-b border-[#E5E0D8]"
             >
               {link.label}
             </a>
           ))}
+          {/* Carta Link */}
+          <button
+            onClick={goToCarta}
+            className="py-3 text-[#4A3B32] hover:text-[#2C2C2C] font-medium text-base border-b border-[#E5E0D8] flex items-center gap-2 text-left"
+            data-testid="mobile-carta-link"
+          >
+            <FileText className="w-4 h-4" />
+            Carta Completa
+          </button>
           <Button
             onClick={() => {
               setIsMobileMenuOpen(false);
