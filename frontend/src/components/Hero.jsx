@@ -36,16 +36,16 @@ export const Hero = ({ onReserveClick }) => {
           </div>
 
           {/* Headline */}
-          <h1 className="animate-fade-in-up opacity-0 delay-100 font-['Playfair_Display'] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-[#2C2C2C] leading-tight tracking-tight mb-6">
-            Precisión Asiática.
+          <h1 className="animate-fade-in-up delay-100 sm:text-5xl md:text-6xl lg:text-7xl !font-['Playfair_Display'] !font-medium !text-4xl !text-center mb-6 opacity-0 text-[#2C2C2C]">Te esperamos
+
             <br />
-            <span className="text-[#8D5A44]">Calidez Local.</span>
+            <span className="text-[#8D5A44]">Local de Calidad</span>
           </h1>
 
           {/* Subheadline */}
           <p className="animate-fade-in-up opacity-0 delay-200 text-lg md:text-xl text-[#4A3B32] leading-relaxed mb-10 max-w-lg">
-            Café de especialidad y Matcha Bar en el corazón de Chamberí. 
-            Una fusión única de tradición oriental y sabor familiar.
+
+
           </p>
 
           {/* CTAs */}
